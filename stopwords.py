@@ -54,3 +54,7 @@ class StopWordList:
 
     def print(self):
         print(self.stop_words)
+        
+    def __iter__(self):
+        for word in self.stop_words:
+            yield word
